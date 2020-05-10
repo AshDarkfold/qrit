@@ -1,0 +1,74 @@
+@media only screen and (max-width: 420px) {
+.login-form-button{
+    font-size:2.5vh !important;
+}
+.login{
+    min-width:205px !important;
+    margin-top:20px;
+
+}
+.signup{
+    min-width:200px !important;
+}
+.check{
+font-size:2.5vh !important;
+}
+.image{
+    display:none !important;
+}
+.auth{
+    width:100% !important;
+}
+
+
+}
+
+@media only screen and (min-width:421px) and (max-width: 765px) {
+.login-form-button{
+    font-size:2.5vh !important;
+}
+.login{
+    width:155px !important;
+    margin-left:20px ;
+
+}
+.signup{
+    width:150px !important;
+    margin-right:20px ;
+
+}
+.check{
+font-size:2.5vh !important;
+}
+.image{
+    display:none !important;
+}
+.auth{
+    width:100% !important;
+}
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 766px) and (max-width: 1500px)  {
+  .login-form-button{
+font-size:100% !important;
+} 
+.login{
+    width:135px !important;
+    margin-left:20px;
+}
+.signup{
+    width:130px !important;
+    margin-right:20px;
+}  
+.check{
+font-size:100% !important;
+}
+} 
+

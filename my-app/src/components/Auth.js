@@ -15,11 +15,11 @@ class Auth extends Component {
     render() {
         return (
             <div >
-                <div class=" container "style={{width:"50%",height:"100%",float:"left"}}>
+                <div class="auth" style={{width:"50%",float:"left",height:"100vh"}}>
                 <br></br><br></br><br></br><br></br>
                 <div style={{textAlign:"center",display:"inline-block",width:"100%"}}>               
                     <FontAwesomeIcon icon={faCoffee} size= "3x" alt="coffee" />
-                    <h2>Welcome</h2>
+                    <h2 className="login1"style={{fontSize:"3vw"}}>Welcome</h2>
                 </div>
                  <br></br><br></br> 
                  <Form
@@ -42,7 +42,7 @@ class Auth extends Component {
                             <Input 
                             prefix={<UserOutlined className="site-form-item-icon" />}
                              placeholder="Username" 
-                             style={{width:"40%",borderTop:"none",borderLeft:"none",borderRight:"none",borderBottom:"2px solid black"}}
+                             style={{width:"40%",borderTop:"none",borderLeft:"none",borderRight:"none",borderBottom:"2px solid black",minWidth:"230px"}}
                              />
                         </Form.Item>
                         <Form.Item
@@ -58,31 +58,36 @@ class Auth extends Component {
                             prefix={<LockOutlined className="site-form-item-icon" />}
                             type="password"
                             placeholder="Password"
-                            style={{width:"40%",borderTop:"none",borderLeft:"none",borderRight:"none",borderBottom:"2px solid black"}}
+                            style={{width:"40%",borderTop:"none",borderLeft:"none",borderRight:"none",borderBottom:"2px solid black",minWidth:"230px"}}
                             />
                         </Form.Item>
                         
 
                         <Form.Item>
-                            <Button htmlType="submit" className="login-form-button" style={{textALign:"center",marginRight:"20px", borderRadius:"10px",fontSize:"100%",width:"20%",border:"1px solid #00FF84",color:"#00FF84"}}>
+                            <div style={{textAlign:"center",display:"inline-block",width:"100%"}}>
+                            <Button htmlType="submit" className="login-form-button signup" style={{textALign:"center", borderRadius:"10px",width:"20%",border:"1px solid #00FF84",color:"#00FF84",fontSize:"100%",height:"100%"}}>
                             Sign Up
                             </Button>
-                            <Button htmlType="submit" className="login-form-button" style={{textALign:"center",marginLeft:"20px", borderRadius:"10px",fontSize:"100%",width:"20%",backgroundColor:"#00FF84",color:"white"}}>
-                            Log ind
-                            </Button>                        </Form.Item>
+                            <Button htmlType="submit" className="login-form-button login" style={{textALign:"center", borderRadius:"10px",width:"20%",backgroundColor:"#00FF84",color:"white",fontSize:"100%",height:"100%"}}>
+                            Log in
+                            </Button> 
+                            </div>
+                            </Form.Item>
                         <Form.Item>
+                        <div style={{textAlign:"center",display:"inline-block",width:"100%"}}>
                             <Form.Item name="remember" valuePropName="" noStyle>
-                            <Checkbox style={{marginRight:"20px"}}>Remember me</Checkbox>
+                            <Checkbox className="check" style={{marginRight:"20px"}}>Remember me</Checkbox>
                             </Form.Item>
 
-                            <a className="login-form-forgot" href=""style={{marginLeft:"20px",color:"#00FF84"}}>
+                            <a className="login-form-forgot check" href=""style={{marginLeft:"20px",color:"#00FF84"}}>
                             Forgot password
                             </a>
+                            </div>
                         </Form.Item>
                 </Form>
                 </div>
-                <div style={{width:"50%",height:"100%",float:"left"}}>
-                    <img src={leaves} style={{width:"100%",height:"629px",objectFit:"cover"}}/>
+                <div className="image" style={{width:"50%",height:"100vh",float:"left"}}>
+                    <img className="image" src={leaves} style={{width:"100%",height:"629px",objectFit:"cover"}}/>
                 </div>
             </div>
            
